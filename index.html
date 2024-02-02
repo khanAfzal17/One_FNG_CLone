@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One FNG</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./public/images/cropped-favi@3x-32x32.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./src/index.css"> -->
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        #navbar{
+            display: flex;
+            margin-top: 10px;
+        }
+        body{
+            cursor:pointer;
+        }
+        #navbar div{
+         margin-right: 15px;
+        }
+        #navbar div h6:hover{
+                color: orangered;
+                font-size: 1.1em;
+                transition: 0.4s;
+                font-weight: bold;
+        }
+        #telhead{
+            color: orangered;
+        }
+        .bg-build{
+            background-image: url(./public/images/homebuilding.jpg);
+            height: 1000px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            margin-top: 20px;
+            background-attachment: fixed;
+            color: white;
+        }
+        nav{
+            padding: 10px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .sub-title {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .bg-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        }
+        header{
+            position:sticky;
+            top:0px;
+            background-color: white;
+            z-index: 1;
+        }
+        .btn1{
+            background-color: rgba(247, 72, 9, 0.774);
+            color: white;
+            padding: 17px;
+            margin-top: 60px;
+            margin-left: -390px;
+        }
+        .btn1:hover{
+            background-color: rgba(247, 72, 9, 0.945);
+            color: white;
+            font-weight: bolder;
+        }
+        .split1{
+            display: flex;
+        }
+        .split-space{
+            width:700px;
+        }
+        .split-space7{
+            width:600px;
+            text-align: justify;
+            
+        }
+        .building2{
+            height:905px;
+            width: 638px;
+        }
+        .split-green{
+            background-color:darkcyan;
+            color: white;
+            text-align: center;
+            padding: 80px;  
+        }
+        .table-heading{
+            color: rgb(49, 47, 46);
+            
+        }
+        .officespace-center{
+            text-align: center;
+            margin: 100px;
+        }
+        .officespace-heading{
+            color: rgb(5, 109, 109);
+        }
+        .split-6{
+            height:905px;
+            width: 638px;
+            
+        }
+        .split-7{
+            height:705px;
+            width: 1px;
+            
+        }
+        .split-green6{
+            background-color:darkcyan;
+            color: white;
+            text-align: center;
+            padding: 80px;  
+            height: 810px;
+        }
+        .me-5:hover{
+            color: orangered;
+        }
+        .btn2{
+            background-color: rgba(247, 72, 9, 0.774);
+            color: white;
+            padding: 10px;
+        }
+        .btn2:hover{
+            background-color: rgba(247, 72, 9, 0.945);
+            color: white;
+            font-weight: bolder;
+        }
+        #tablebg{
+            background-image: url(./public/images/officegardenbg.jpg);
+            height: 100vh;
+        }
+        .btnt{
+            color: white;
+            border: 1px solid white;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .btnt:hover{
+            color: white;
+            border: 1px solid white;
+            padding: 15px;
+            font-weight: bold;
+            background-color: rgb(21, 90, 90);
+        }
+        .footer-flex
+        {
+            color:#fff;
+            padding:20px;
+            display:grid;
+            grid-template-columns:2.5fr 2.5fr 2.5fr 2.5fr 2fr
+        }
+        .footer-title
+        {
+            font-size:15px;
+            margin-top:10px;
+            margin-bottom:20px;
+            color:#9e9d9d
+        }
+        .footer-title span
+        {
+            color:rgb(20, 19, 19)
+        }
+        .foot-text
+        {
+            color:#242020
+        }
+        #back-to-top-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <nav > 
+                <div><img src="./public/images/newlogofng.png" height="55px"></div>
+             <div id="navbar">
+                <div><h6>Overview</h6></div>
+                <div><h6>Office</h6></div>
+                <div><h6>Retail</h6></div>
+                <div><h6>Highights</h6></div>
+                <div><h6>Plans</h6></div>
+                <div><h6>Price List</h6></div>
+                <div><h6>Amenities</h6></div>
+                <div><h6>Location</h6></div>
+                <div><h6>Gallery</h6></div>
+                <div><h6>Contact US</h6></div>
+             </div>
+                <div id="telhead"><h3 class="bi bi-telephone-fill">+91 9070108108</h3></div>
+            </nav>
+        </header>
+        <section>
+            <div class="bg-build"><div class="bg-text">
+                <div class="sub-title">ONE FNG</div>
+            <div class="title">THERE’S ONLY ONE PLACE THAT CAN MATCH THE MOVEMENT, MAGIC AND MOMENTUM YOU BRING TO THE TABLE. ONLY ONE SPACE WHERE YOU AND THE SELECT FEW JUST LIKE YOU GATHER.</div> 
+            </div>
+        </div>
+        <div class="split1">
+            <div class="split-green" >
+                <div>
+                    <h1>ARTISTIC INGENUITY</h1>
+                    <h2>Meets Modern Spaces</h2>
+                </div>
+                    <div class="split-space">
+                        <p>With its iconic architecture, unwavering sustainability, and strategic placement, in the vibrant Sector 142 of Noida, spread across 15 acres, ONE FNG stands as an emblematic architectural marvel poised to reshape the cityscape and elevate Noida’s essence to new heights.
+
+                            This remarkable endeavor seamlessly unites artistic creativity with state-of-the-art workspaces and contemporary retail, crafting an
+                            
+                            environment where work and leisure seamlessly converge in perfect harmony. Nestled within ONE FNG is a vibrant Hi-Street retail where you can explore, indulge, and savor a multifaceted experience. Here, shopping, dining, and entertainment seamlessly come together to create a dynamic and inviting space.</p>
+                    </div> 
+                    <div>
+                        <table cellpadding="5">
+                            <thead>
+                               <tr><th><h2 class="table-heading">OFFICE SPACES</h2></th>
+                                <th><h2 class="table-heading">RETAIL SPACES</h2></th></tr>
+                                <tbody>
+                                    <tr>
+                                       <td><h5>Tower A (SOUTH</h5></td>
+                                       <td>
+                                        <h5>Hi-Street Retail: 5</h5>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                       <td><h5>WING): G+37 Floors</h5></td>
+                                       <td>
+                                        <h5>Blocks</h5>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td>
+                                        <h5>Blocks F1-F5</h5>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                       <td><h5>Tower B: G+15 Floors</h5></td>
+                                       <td>
+                                        <h5></h5>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><h5>Tower Retail: G+Floor 1</h5></td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        </table>
+                    </div>
+                    <div><button class="btn btn1">DOWNLOAD BROCHURE</button></div>
+            </div>
+            
+            <div class="split-2"><img class="building2" src="./public/images/building2.jpeg" alt=""></div>
+     </div>
+     <a href="#top" id="back-to-top-link"><button class="btn btn-warning"><span class="bi bi-arrow-up-square-fill"></span></button>
+     </a>
+   
+     <div class="officespace-center">
+        <div><h1 class="officespace-heading">OFFICE SPACES</h1></div>
+        <div><p class="officespace-heading">Our office spaces are thoughtfully designed to offer you the perfect blend of functionality and flexibility. With lockable units admeasuring between approx. 1000 to approx. 1500 square feet, you will have the ideal canvas to shape your workspace according to your unique needs.</p></div>
+     </div>
+     <div  class="split1" style="margin-bottom:100px ;">
+        <div class="split-2" style="margin-right:80px ;"><img class="building2" src="./public/images/building3.jpg" alt=""></div>
+        <div class="split-green2" >
+            <div>
+                <h1 style="text-align: center; color:rgb(21, 117, 117) ; margin-bottom:40px ;">TOWER B</h1>
+            </div>
+                <div class="split-space">
+                    <p style="text-align: justify; color:rgb(60, 148, 148) ; font-size: 17px;"><span class="bi bi-dot"></span> Tower B rises elegantly to 15 floors, featuring an expansive floor plate of approx. 53,000 square feet – one of the Noida’s largest. Setting a remarkable standard, it offers businesses a vast canvas for versatile office configurations. <br>
+                        <span class="bi bi-dot"></span>21 high-speed elevators in the towers feature cutting-edge technology for enhanced efficiency and convenience, ensuring swift vertical movement and optimizing accessibility and comfort for all occupants. <br>
+                        <span class="bi bi-dot"></span>ONE FNG’s meticulous planning includes separate entrances for office personnel and the retail area, ensuring efficient movement, optimized operational flow, and an enhanced overall experience for clients and visitors. <br>
+                        <span class="bi bi-dot"></span> The steel composite building is carefully designed to not only extend the lifespan of the structure but also to significantly reduce its carbon footprint. <br>
+                        <span class="bi bi-dot"></span>  Our commitment to green spaces is evident in detailed landscaping and thoughtful placement of trees, fostering a refreshing and environmentally conscious ambiance within our premises.</p>
+                </div> 
+                <div>
+                    <table cellspacing="" cellpadding="25">
+                        <thead>
+                            <tr>
+                                <th><img src="./public/images/town-1.png" alt=""><br> <br> 17.5 FEET HEIGHT <br>
+                                    GROUND FLOOR & FLOOR <br> 1</th>
+                            <th><img src="./public/images/workspace-1.png" alt=""> <br> <br> 62.5% <br>
+                                OFFICE EFFICIENCY</th>
+                            <th><img src="./public/images/wall-1.png" alt=""> <br><br>
+                                33 FEET <br>
+                                ENTRANCE LOBBY <br> HEIGHT</th>
+                            </tr>
+                            <tr>
+                                <th><img src="./public/images/elevator-1-1.png" alt=""><br> <br>
+                                    11 FEET WIDE <br>
+                                    LIFT LOBBY</th>
+                            <th><img src="./public/images/corridor.png" alt=""> <br><br>
+                                7 FEET <br>
+                                CORRIDORS</th>
+                            <th><img src="./public/images/elevator-1.png" alt=""> <br><br> 21 <br>
+                                HIGHT SPEED <br> ELEVATORS</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+        </div>
+ </div>
+ <hr>
+ <div class="split1" style="margin-top: 150px;">
+        <div class="split-green2" >
+            <div>
+                <h1 style="text-align: center; color:rgb(21, 117, 117) ; margin-bottom:40px ;">TOWER A (SOUTH SWING)</h1>
+            </div>
+                <div class="split-space">
+                    <p style="text-align: justify; color:rgb(60, 148, 148) ; font-size: 17px;"><span class="bi bi-dot"></span> Tower B rises elegantly to 15 floors, featuring an expansive floor plate of approx. 53,000 square feet – one of the Noida’s largest. Setting a remarkable standard, it offers businesses a vast canvas for versatile office configurations. <br>
+                        <span class="bi bi-dot"></span>21 high-speed elevators in the towers feature cutting-edge technology for enhanced efficiency and convenience, ensuring swift vertical movement and optimizing accessibility and comfort for all occupants. <br>
+                        <span class="bi bi-dot"></span>ONE FNG’s meticulous planning includes separate entrances for office personnel and the retail area, ensuring efficient movement, optimized operational flow, and an enhanced overall experience for clients and visitors. <br>
+                        <span class="bi bi-dot"></span> The steel composite building is carefully designed to not only extend the lifespan of the structure but also to significantly reduce its carbon footprint. <br>
+                        <span class="bi bi-dot"></span>  Our commitment to green spaces is evident in detailed landscaping and thoughtful placement of trees, fostering a refreshing and environmentally conscious ambiance within our premises.</p>
+                </div> 
+                <div>
+                    <table cellspacing="" cellpadding="25">
+                        <thead>
+                            <tr>
+                                <th><img src="./public/images/town-1.png" alt=""><br> <br> 17.5 FEET HEIGHT <br>
+                                    GROUND FLOOR & FLOOR <br> 1</th>
+                            <th><img src="./public/images/workspace-1.png" alt=""> <br> <br> 62.5% <br>
+                                OFFICE EFFICIENCY</th>
+                            <th><img src="./public/images/entrance.png" alt=""> <br><br> 5800 SQFT ENTRANCE <br> LOBBY</th>
+                            </tr>
+                            <tr>
+                            <th><img src="./public/images/corridor.png" alt=""> <br><br>
+                                7 FEET <br>
+                                CORRIDORS</th>
+                            <th><img src="./public/images/lift.png" alt=""> <br><br> 14.7 FEET WIDE LIFT <br> LOBBY</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+        </div>
+        <div class="split-2" style="margin-left:80px ;"><img class="building2" src="./public/images/building4.jpg" alt=""></div>
+ </div>
+
+ <div class="split1" style="margin-top:100px;">
+    <div class="split-green" >
+        <div>
+            <h1>Tower Retail: G+Floor1</h1>
+        </div>
+            <div class="split-space">
+                <p>In our retail spaces, luxury meets practicality, providing an elegant and convenient shopping atmosphere for all. At the heart of our development, we have meticulously designed. Tower Retail, encompassing ground floor in Tower A (south wing) and ground and first floors in Tower B.</p>
+            </div> 
+    </div>
+    <div class="split-6"><img class="building2" src="./public/images/building5.jpeg" alt=""></div>
+</div>
+<!--  -->
+<div class="split1">
+    <div class="split-6"><img src="./public/images/building6.jpeg" alt=""></div>
+    <div class="split-green6" >
+        <div>
+            <h1>Hi-Street Retail: 5 Blocks (F1 – F5)</h1>
+        </div>
+            <div class="split-space">
+                <p>The Hi-street retail section offers diverse stores, from upscale boutiques to daily essentials, ensuring a well-rounded shopping experience. Thoughtfully positioned with precise spatial orientation, these spaces not only enhance visibility but also evoke a sense of exploration, becoming prominent landmarks. Additionally, in F1 block, Floors 2 and 3 are dedicated to promoting the overall health of occupants. These spaces focus on physical fitness and mental well-being, featuring amenities such as a gymnasium, meditation Center, indoor swimming pool, board games, and much more.</p>
+            </div> 
+    </div>
+</div>
+<div style="text-align: center;">
+    <h1 style="margin-bottom: 50px; color:rgb(31, 141, 141)">HIGHLIGHTS</h1>
+</div>
+<div class="split1">
+    <div class="split-7"><img id="highlight" src="./public/images/building6.jpeg"  alt=""></div>
+    <div style="background-color: rgb(228, 142, 13);font-size: 20px;" class="split-green6" >
+            <div class="split-space7">
+                <p><span class="bi bi-dot"></span> Strategically located and adjacent to FNG, Noida – Greater Noida Expressway and Corporate Hubs. <br>
+                    <span class="bi bi-dot"></span>    IT/ITES Project with modern office and retail spaces, Sprawling over approx. 15 acres in the vibrant Sector 142. <br>
+                    <span class="bi bi-dot"></span>Boasts of one of the largest floor plates in Noida (approx. 53000 square feet). <br>
+                    <span class="bi bi-dot"></span>The office layout is designed with a 62.5% efficiency, ensuring optimum utilization of space. <br>
+                    <span class="bi bi-dot"></span>The towers are equipped with 21 high speed elevators. <br>
+                    <span class="bi bi-dot"></span>  Multilevel Car Parking facility.
+                    IGBC Platinum Pre- Certified for Design. <br>
+                    <span class="bi bi-dot"></span> Business Center backed by State-of-the-art technology & support services. <br>
+                    <span class="bi bi-dot"></span> Mesmerizing views of lush Green Landscape with pop up fountains, Cycle & jogging Tracks. <br>
+                    <span class="bi bi-dot"></span>   Sports Wellness Center with Gym, indoor swimming pool, meditation center, Indoor games and much more. <br>
+                    <span class="bi bi-dot"></span> Convenient access to significant residential, commercial, and recreational amenities, enhancing your lifestyle with accessibility and convenience.</p>
+            </div> 
+    </div>
+</div>
+<div style="text-align: center; margin: 100px;color: rgb(25, 117, 117);">
+    <h2>PLANS</h2>
+</div>
+<div style="display: flex; justify-content:center;">
+    <div class="me-5"><h3>Office Space</h3></div>
+    <div class="me-5"><h3>Ground Floor Retail</h3></div>
+    <div class="me-5"><h3>First Floor Retail</h3></div>
+    <div class="me-5"><h3>Site Layout</h3></div>
+</div>
+<hr>
+<div style="height:1100px ; background-color: rgb(14, 107, 107);margin-top: 60px; margin: 40px; padding: 15px;">
+    <div style="display: flex;justify-content: center;">
+        <div class="mt-5" ><img width="100%" src="./public/images/circuit.jpg" alt=""></div>
+    </div>
+</div>
+<div style="text-align:center;margin: 70px; color: rgb(12, 112, 112);">
+    <h1>PRICE LIST</h1>
+</div>
+<hr>
+<div style="display: flex; justify-content: space-between;">
+    <div class="m-5 p-4" style="text-align: justify; background-color: darkcyan;color: white;">
+        <h4>Office Space</h4>
+        <h2>On Request.</h2>
+        <p>Thoughtfully designed office spaces offer a perfect blend of functionality and flexibility.
+        </p>
+        <button class="btn btn2">Enquire Now</button>
+    </div>
+    <div class="m-5 p-4" style="text-align: justify; background-color: darkcyan;color: white;">
+        <h4>Ground Floor Retail</h4>
+        <h2>On Request.</h2>
+        <p>Our retail spaces offer a seamless blend of practicality and versatility.
+        </p>
+        <button class="btn btn2">Enquire Now</button>
+    </div>
+    <div class="m-5 p-4" style="text-align: justify; background-color: darkcyan;color: white;">
+        <h4>First Floor Retail</h4>
+        <h2>On Request.</h2>
+        <p>Explore, indulge, and savour a multifaceted experience within the retail area, a dynamic and inviting space.
+        </p>
+        <button class="btn btn2">Enquire Now</button>
+    </div>
+</div>
+<br><br><br>
+<div  id="tablebg" class="m-5" style="color:white;">
+    <h1 class="text-center p-4">AMENITIES</h1>
+    <table width="100%"  border="1" cellspacing="10"  cellpadding="30" frame="void" >
+        <colgroup span="1"></colgroup>
+        <tbody>
+            <tr>
+                <th><button class="btn btnt">STEEL COMPOSITE BUILDING</button></th>
+                <th><button class="btn btnt">SEPARATE ENTRANCE FOR OFFICE & RETAIL</button></th>
+                <th><button class="btn btnt">21 HIGH SPEED ELEVATORS</button></th>
+            </tr>
+            <tr>
+                <th><button class="btn btnt">STEEL COMPOSITE BUILDING</button></th>
+                <th><button class="btn btnt">SEPARATE ENTRANCE FOR OFFICE & RETAIL</button></th>
+                <th><button class="btn btnt">21 HIGH SPEED ELEVATORS</button></th>
+            </tr>
+            <tr>
+                <th><button class="btn btnt">STEEL COMPOSITE BUILDING</button></th>
+                <th><button class="btn btnt">SEPARATE ENTRANCE FOR OFFICE & RETAIL</button></th>
+                <th><button class="btn btnt">21 HIGH SPEED ELEVATORS</button></th>
+            </tr>
+            <tr>
+                <th><button class="btn btnt">STEEL COMPOSITE BUILDING</button></th>
+                <th><button class="btn btnt">SEPARATE ENTRANCE FOR OFFICE & RETAIL</button></th>
+                <th><button class="btn btnt">21 HIGH SPEED ELEVATORS</button></th>
+            </tr>
+            <tr>
+                <th><button class="btn btnt">STEEL COMPOSITE BUILDING</button></th>
+                <th><button class="btn btnt">SEPARATE ENTRANCE FOR OFFICE & RETAIL</button></th>
+                <th><button class="btn btnt">21 HIGH SPEED ELEVATORS</button></th>
+            </tr>
+        </tbody>
+    </table> 
+</div>
+<div>
+    <h1 style="color: darkcyan;" class="text-center m-5">LOCATION MAP</h1>
+</div>
+<div class="split1">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14025.266649154637!2d77.416433!3d28.500119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce991fecab71f%3A0x3e2a02093827dabb!2sOne%20FNG%20Noida!5e0!3m2!1sen!2sin!4v1706902192971!5m2!1sen!2sin" width="700" height="650" style="border:0; margin-right: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div >
+        <div>
+            <h2 class="text-center" style="color: darkcyan;">PRIME LOCATION</h2>
+            <h3 class="text-center" style="color: darkcyan;">Infinite Possibilities in Sector 142</h3>
+        </div>
+            <div class="split-space">
+                <p style="font-size: 18px;text-align: justify; color: rgb(44, 168, 168);"><span class="bi bi-dot"></span> Strategically situated alongside the Faridabad–Noida–Ghaziabad Expressway (FNG), ensuring efficient and expedited connectivity to diverse regions within the vicinity. <br>
+
+                    <span class="bi bi-dot"></span>   Located adjacent to Noida-Greater Noida Expressway, offering enhanced connectivity that further links to the Yamuna Expressway. <br>
+                    
+                    <span class="bi bi-dot"></span>   Only 16 km from the DND Flyway, offering easy access to Delhi. <br>
+                    
+                    <span class="bi bi-dot"></span>   Convenient proximity to the forthcoming Jewar International Airport. <br>
+                    
+                    <span class="bi bi-dot"></span> 35 km distance to the IGI International Airport in Delhi provides excellent connectivity for travelers and business ventures. <br>
+                    
+                    <span class="bi bi-dot"></span>  Strategic proximity to pivotal sectors including 82, 93, 100, 110, 137, and 168 offering convenient access to significant residential, commercial,and recreational amenities, enhancing your lifestyle with accessibility. <br>
+                    
+                    <span class="bi bi-dot"></span>   Noida Sector 142 stands as a prominent metro station on the elevated North-South corridor of the Aqua Line. (0.5 km sec -142 and 2.3 km sec -143 metro station) <br>
+                    
+                    <span class="bi bi-dot"></span>  In a significant development, Noida’s Aqua Line is set to witness an extension, connecting Noida Sector 142 to Botanical Garden Metro Station. This expansion will comprise the construction of 8 new metro stations, aimed at enhancing transportation convenience in the region.</p>
+            </div> 
+    </div>
+</div>
+<div>
+    <h1 style="color:rgb(39, 145, 145);" class="text-center m-5">GALLERY</h1>
+</div>
+<div class="carousel slide carousel-dark" id="banners" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./public/images/carausel1.jpg" height="250" class="w-100 d-block">
+        </div>
+        <div class="carousel-item">
+            <img src="./public/images/carausel2.jpg" height="250" class="w-100 d-block">
+        </div>
+        <div class="carousel-item">
+            <img src="./public/images/carausel3.jpg" height="250" class="w-100 d-block">
+        </div>
+        <div class="carousel-item">
+            <img src="./public/images/carausel4.jpg" height="250" class="w-100 d-block">
+        </div>
+        <div class="carousel-item">
+            <img src="./public/images/carausel5.jpg" height="250" class="w-100 d-block">
+        </div>
+        <div class="carousel-item">
+            <img src="./public/images/carausel6.jpg" height="250" class="w-100 d-block">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <div class="carousel-indicators">
+        <button class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+        <button data-bs-slide-to="1" data-bs-target="#banners"></button>
+        <button data-bs-slide-to="2" data-bs-target="#banners"></button>
+        <button class="active" data-bs-slide-to="3" data-bs-target="#banners"></button>
+        <button data-bs-slide-to="4" data-bs-target="#banners"></button>
+        <button data-bs-slide-to="5" data-bs-target="#banners"></button>
+    </div>
+</div>
+<div class="m-5" style="display: flex; justify-content: space-between;">
+    <div style="color: rgb(238, 98, 48);">
+        <h1>REGISTER</h1><br>
+        <h1>YOUR</h1><br>
+        <h1>INTEREST</h1>
+    </div>
+    <div>
+        <form>
+            <input class="form-control w-50" type="text" placeholder="FIRST NAME*"> &nbsp; <input type="text" class="form-control w-50" placeholder="LAST NAME*"> <br>
+            <input type="email" class="form-control w-50" placeholder="EMAIL*"> <br>
+            <div class="input-group w-50">
+                <span class="bi bi-globe input-group-text "></span>
+                <select title="Language" class="form-select">
+                    <option>+91</option>
+                    <option>+221</option>
+                    <option>+54</option>
+                </select>
+              </div>
+              <input type="radio" name="click"> Phone
+              <input type="radio" name="click"> Email
+              <br>
+              <input type="checkbox"> I'd like to hear about news & offers. &nbsp; &nbsp; <input type="checkbox"> I've read and agree to the Privacy Policy* <br>
+              <button class="btn btn-warning fw-bold p-3 mt-3"><span class="bi bi-arrow-right"></span> Submit</button>
+        </form>
+    </div>
+</div>
+</section>
+<footer >
+    <div >
+        <div class="footer-flex p-5">
+           <div>
+               <div class="footer-title me-5"><img src="./public/images/footerlogo.png" height="70px" alt=""></div>
+               <div style="color: rgb(161, 156, 156);" class="icon-span"><p class="me-4">A real estate group that is committed to building a better future based on principles of clarity, trust, and integrity.</p> 
+               </div>
+           </div>
+           <div>
+               <div class="footer-title ">SITE OFFICE</div>
+               <div class="foot-text">
+                   <span>PLOT NO. 1, SECTOR 142,</span> <br>
+               <span>NOIDA – 201305</span> <br>
+               <span>UTTAR PRADESH, INDIA</span> <br>
+               </div>
+           </div>
+           <div>
+               <div class="footer-title">MARKETING OFFICE</div>
+               <div class="foot-text me-5">
+                   <span>PLOT NO-7, TECHZONE 4,</span> <br>
+               <span>GREATER NOIDA WEST, 201308</span> <br>
+               <span>UTTAR PRADESH, INDIA.</span> <br>
+               <span>Shopping</span> <br>
+               </div>
+           </div>
+           <div>
+               <div class="footer-title">REGISTERED OFFICE</div>
+               <div class="foot-text">
+                   <span>PLOT NO. 3 & 4, 2ND FLOOR, A BLOCK MARKET,</span> <br>
+               <span>SAVITRI BHAWAN, PREET VIHAR,</span> <br>
+               <span>DELHI – 110092 INDIA.</span> <br>
+               </div>
+           </div>
+       </div>
+       <div style="color:rgb(189, 179, 179) ;background-color: rgb(7, 7, 7);">
+           <hr style="color: rgb(65, 63, 63); opacity: 50%;" class="w-100 mb-5">
+          <div class="d-flex justify-content-evenly pb-5">
+           <div>
+            Mode of Payment: “SS TECHNOPARK PVT LTD Collection Account for ONE FNG”, Account No. 629305042272, IFSC ICIC00006293, ICICI Bank Limited, Rajouri Garden. <br><br>
+               &copy; Copyright 2023 One FNG. All Right Reserved. | RERA Registration No. – UPRERAPRJ279516 www.up-rera.in | Disclaimer & Privacy Policy
+           </div>
+          </div>
+        </div>
+    </div>
+   </footer>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
